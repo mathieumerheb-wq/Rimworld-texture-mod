@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="rjw_BodyPartNaturalBaseGenMale">
+    <defName>FoxPenis</defName>
+    <label>fox penis</label>
+    <description>A fox penis. Sheathed, tapered, and knotted.</description>
+    <statBases>
+      <MarketValue>250</MarketValue>
+      <Mass>0.20</Mass>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="rjw_BodyPartNaturalBaseGenMale">
+    <defName>WolfPenis</defName>
+    <label>wolf penis</label>
+    <description>A wolf penis. Sheathed, tapered, and knotted.</description>
+    <statBases>
+      <MarketValue>250</MarketValue>
+      <Mass>0.20</Mass>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="rjw_BodyPartNaturalBaseGenMale">
+    <defName>LynxPenis</defName>
+    <label>lynx penis</label>
+    <description>A lynx penis. Sheathed, tapered, barbed, and knotted.</description>
+    <statBases>
+      <MarketValue>250</MarketValue>
+      <Mass>0.20</Mass>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="rjw_BodyPartNaturalBaseGenMale">
+    <defName>DeerPenis</defName>
+    <label>deer penis</label>
+    <description>A deer penis. Sheathed, long, thin, and flared.</description>
+    <statBases>
+      <MarketValue>250</MarketValue>
+      <Mass>0.20</Mass>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="rjw_BodyPartNaturalBaseGenMale">
+    <defName>RabbitPenis</defName>
+    <label>rabbit penis</label>
+    <description>A rabbit penis. Sheathed, tapered, and thin.</description>
+    <statBases>
+      <MarketValue>250</MarketValue>
+      <Mass>0.20</Mass>
+    </statBases>
+  </ThingDef>
+
+</Defs>

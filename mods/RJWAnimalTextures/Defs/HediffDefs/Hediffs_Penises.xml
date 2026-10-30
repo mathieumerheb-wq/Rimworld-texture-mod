@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <rjw.HediffDef_SexPart ParentName="NaturalPrivatePartPenis">
+    <defName>FoxPenis</defName>
+    <label>fox penis</label>
+    <labelNoun>a fox penis</labelNoun>
+    <description>A fox penis. Sheathed, tapered, and knotted.</description>
+    <descriptionHyperlinks>
+      <ThingDef>FoxPenis</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>FoxPenis</spawnThingOnRemoved>
+    <partTags>
+      <li>Knotted</li>
+      <li>Sheathed</li>
+      <li>Tapered</li>
+    </partTags>
+  </rjw.HediffDef_SexPart>
+
+  <rjw.HediffDef_SexPart ParentName="NaturalPrivatePartPenis">
+    <defName>WolfPenis</defName>
+    <label>wolf penis</label>
+    <labelNoun>a wolf penis</labelNoun>
+    <description>A wolf penis. Sheathed, tapered, and knotted.</description>
+    <descriptionHyperlinks>
+      <ThingDef>WolfPenis</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>WolfPenis</spawnThingOnRemoved>
+    <partTags>
+      <li>Knotted</li>
+      <li>Sheathed</li>
+      <li>Tapered</li>
+    </partTags>
+  </rjw.HediffDef_SexPart>
+
+  <rjw.HediffDef_SexPart ParentName="NaturalPrivatePartPenis">
+    <defName>LynxPenis</defName>
+    <label>lynx penis</label>
+    <labelNoun>a lynx penis</labelNoun>
+    <description>A lynx penis. Sheathed, tapered, barbed, and knotted.</description>
+    <descriptionHyperlinks>
+      <ThingDef>LynxPenis</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>LynxPenis</spawnThingOnRemoved>
+    <partTags>
+      <li>Knotted</li>
+      <li>Barbed</li>
+      <li>Sheathed</li>
+      <li>Tapered</li>
+    </partTags>
+  </rjw.HediffDef_SexPart>
+
+  <rjw.HediffDef_SexPart ParentName="NaturalPrivatePartPenis">
+    <defName>DeerPenis</defName>
+    <label>deer penis</label>
+    <labelNoun>a deer penis</labelNoun>
+    <description>A deer penis. Sheathed, long, thin, and flared.</description>
+    <descriptionHyperlinks>
+      <ThingDef>DeerPenis</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>DeerPenis</spawnThingOnRemoved>
+    <partTags>
+      <li>Flared</li>
+      <li>Sheathed</li>
+      <li>Long</li>
+      <li>Thin</li>
+    </partTags>
+  </rjw.HediffDef_SexPart>
+
+  <rjw.HediffDef_SexPart ParentName="NaturalPrivatePartPenis">
+    <defName>RabbitPenis</defName>
+    <label>rabbit penis</label>
+    <labelNoun>a rabbit penis</labelNoun>
+    <description>A rabbit penis. Sheathed, tapered, and thin.</description>
+    <descriptionHyperlinks>
+      <ThingDef>RabbitPenis</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>RabbitPenis</spawnThingOnRemoved>
+    <partTags>
+      <li>Sheathed</li>
+      <li>Tapered</li>
+      <li>Thin</li>
+    </partTags>
+  </rjw.HediffDef_SexPart>
+
+</Defs>

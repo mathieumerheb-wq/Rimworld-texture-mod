@@ -1,0 +1,4 @@
+Copied from Sized Apparel for review. Not part of the RJWAnimalTextures live texture set.
+Source: C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\sized-apparel-zero\Textures\SizedApparel\BodyParts\Human\Penis
+Gene: rjw_genes_Orc_genitalia, loaded with RJW Genes Race Support. Penis field OrcPenis.
+BodypartDetail varName is default, so the filenames have no _default suffix. Ball files are included.

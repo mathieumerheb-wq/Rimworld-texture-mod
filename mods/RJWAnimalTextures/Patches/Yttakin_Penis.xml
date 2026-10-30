@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Biotech</li>
+      <li>Ludeon.RimWorld.Biotech</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/XenotypeDef[defName="Yttakin"]/genes</xpath>
+      <value>
+        <li>RJWAT_wolf_genitalia</li>
+      </value>
+    </match>
+  </Operation>
+
+</Patch>

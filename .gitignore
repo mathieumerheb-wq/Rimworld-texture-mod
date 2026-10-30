@@ -1,0 +1,93 @@
+# Operating systems
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDEs and editors
+.vs/
+.idea/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.swp
+*.swo
+*~
+
+# .NET / C# build output
+[Bb]in/
+[Oo]bj/
+[Bb]uild/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+artifacts/
+
+# Compiled assemblies and debug symbols
+# Keep source code tracked. Distributable DLLs should be packaged deliberately.
+*.pdb
+*.mdb
+
+# Temporary files and backups
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+*.rej
+
+# Logs and crash dumps
+*.log
+*.dmp
+*.stackdump
+
+# Python environments and cache (for optional tools)
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+
+# Node tooling (if later required)
+node_modules/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+secrets/
+credentials.json
+
+# Local machine configuration
+.local/
+local.config.json
+paths.local.json
+
+# Generated indexes and disposable reports
+mod-index/generated/
+generated/
+reports/generated/
+
+# Temporary packaging and archives
+*.zip
+*.7z
+*.rar
+
+# In-game screenshots used for review
+/capture/
+
+# Staged sprites awaiting review; promoted files live in Textures and are rebuilt by the ArtInventory scripts
+mods/*/ArtInventory/Staging/
+
+# Temporary test outputs
+test-results/
+TestResults/
+coverage/
+
+# IMPORTANT:
+# Do not ignore all PNG, XML, JSON, DLL, or other mod assets globally.
+# Required source files, textures, definitions, and packaged assets
+# must remain trackable. Use targeted ignore rules if a particular
+# mod produces disposable files with these extensions.

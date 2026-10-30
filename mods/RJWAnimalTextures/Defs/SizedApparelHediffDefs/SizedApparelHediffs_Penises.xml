@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <SizedApparel.SizedApparelHediffDef>
+    <defName>FoxPenis</defName>
+    <BodyPartOf>Penis</BodyPartOf>
+    <isBodyPartHediff>true</isBodyPartHediff>
+  </SizedApparel.SizedApparelHediffDef>
+
+  <SizedApparel.SizedApparelHediffDef>
+    <defName>WolfPenis</defName>
+    <BodyPartOf>Penis</BodyPartOf>
+    <isBodyPartHediff>true</isBodyPartHediff>
+  </SizedApparel.SizedApparelHediffDef>
+
+  <SizedApparel.SizedApparelHediffDef>
+    <defName>LynxPenis</defName>
+    <BodyPartOf>Penis</BodyPartOf>
+    <isBodyPartHediff>true</isBodyPartHediff>
+  </SizedApparel.SizedApparelHediffDef>
+
+  <SizedApparel.SizedApparelHediffDef>
+    <defName>DeerPenis</defName>
+    <BodyPartOf>Penis</BodyPartOf>
+    <isBodyPartHediff>true</isBodyPartHediff>
+  </SizedApparel.SizedApparelHediffDef>
+
+  <SizedApparel.SizedApparelHediffDef>
+    <defName>RabbitPenis</defName>
+    <BodyPartOf>Penis</BodyPartOf>
+    <isBodyPartHediff>true</isBodyPartHediff>
+  </SizedApparel.SizedApparelHediffDef>
+</Defs>

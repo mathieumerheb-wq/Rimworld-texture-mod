@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>RJWAT_fox_genitalia</defName>
+    <label>fox genitalia</label>
+    <description>Carriers of this gene have fox genitalia.</description>
+    <iconPath>Genes/Icons/RJWAT_fox</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>FoxPenis</penis>
+        <vagina>DogVagina</vagina>
+        <anus>DogAnus</anus>
+      </li>
+    </modExtensions>
+    <displayOrderInCategory>808</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>RJWAT_wolf_genitalia</defName>
+    <label>wolf genitalia</label>
+    <description>Carriers of this gene have wolf genitalia.</description>
+    <iconPath>Genes/Icons/RJWAT_wolf</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>WolfPenis</penis>
+        <vagina>DogVagina</vagina>
+        <anus>DogAnus</anus>
+      </li>
+    </modExtensions>
+    <displayOrderInCategory>809</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>RJWAT_lynx_genitalia</defName>
+    <label>lynx genitalia</label>
+    <description>Carriers of this gene have lynx genitalia.</description>
+    <iconPath>Genes/Icons/RJWAT_lynx</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>LynxPenis</penis>
+        <vagina>CatVagina</vagina>
+        <anus>FelineAnus</anus>
+      </li>
+    </modExtensions>
+    <displayOrderInCategory>810</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>RJWAT_deer_genitalia</defName>
+    <label>deer genitalia</label>
+    <description>Carriers of this gene have deer genitalia.</description>
+    <iconPath>Genes/Icons/RJWAT_deer</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>DeerPenis</penis>
+        <vagina>Vagina</vagina>
+        <anus>CervineAnus</anus>
+      </li>
+    </modExtensions>
+    <displayOrderInCategory>811</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>RJWAT_rabbit_genitalia</defName>
+    <label>rabbit genitalia</label>
+    <description>Carriers of this gene have a rabbit penis, with a human vagina and anus.</description>
+    <iconPath>Genes/Icons/RJWAT_rabbit</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>RabbitPenis</penis>
+        <vagina>Vagina</vagina>
+        <anus>Anus</anus>
+      </li>
+    </modExtensions>
+    <displayOrderInCategory>812</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>RJWAT_bovine_genitalia</defName>
+    <label>bovine genitalia</label>
+    <description>Carriers of this gene have bovine genitalia.</description>
+    <iconPath>Genes/Icons/RJWAT_bovine</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>BovinePenis</penis>
+        <vagina>BovineVagina</vagina>
+        <anus>Anus</anus>
+      </li>
+    </modExtensions>
+    <displayOrderInCategory>813</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>RJWAT_bear_genitalia</defName>
+    <label>bear genitalia</label>
+    <description>Carriers of this gene have a bear penis, with a human vagina and anus.</description>
+    <iconPath>Genes/Icons/RJWAT_bear</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>BearPenis</penis>
+        <vagina>Vagina</vagina>
+        <anus>Anus</anus>
+      </li>
+    </modExtensions>
+    <displayOrderInCategory>814</displayOrderInCategory>
+  </GeneDef>
+
+</Defs>

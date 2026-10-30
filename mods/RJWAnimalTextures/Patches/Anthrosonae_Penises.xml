@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Anthrosonae</li>
+      <li>ATK.Anthrosonae</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/XenotypeDef[defName="ATK_Anthrofox"]/genes/li[text()="rjw_genes_canine_genitalia"]</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/XenotypeDef[defName="ATK_Anthrofox"]/genes/li[text()="rjw_genes_canine_genitalia"]</xpath>
+            <value>
+              <li>RJWAT_fox_genitalia</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/XenotypeDef[defName="ATK_Anthrofox"]/genes</xpath>
+            <value>
+              <li>RJWAT_fox_genitalia</li>
+            </value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/XenotypeDef[defName="ATK_Anthrowolf"]/genes/li[text()="rjw_genes_canine_genitalia"]</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/XenotypeDef[defName="ATK_Anthrowolf"]/genes/li[text()="rjw_genes_canine_genitalia"]</xpath>
+            <value>
+              <li>RJWAT_wolf_genitalia</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/XenotypeDef[defName="ATK_Anthrowolf"]/genes</xpath>
+            <value>
+              <li>RJWAT_wolf_genitalia</li>
+            </value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/XenotypeDef[defName="ATK_Anthrodeer"]/genes/li[text()="rjw_genes_Needle_genitalia"]</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/XenotypeDef[defName="ATK_Anthrodeer"]/genes/li[text()="rjw_genes_Needle_genitalia"]</xpath>
+            <value>
+              <li>RJWAT_deer_genitalia</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/XenotypeDef[defName="ATK_Anthrodeer"]/genes</xpath>
+            <value>
+              <li>RJWAT_deer_genitalia</li>
+            </value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/XenotypeDef[defName="ATK_Anthrorabbit"]/genes/li[text()="rjw_genes_rodent_genitalia"]</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/XenotypeDef[defName="ATK_Anthrorabbit"]/genes/li[text()="rjw_genes_rodent_genitalia"]</xpath>
+            <value>
+              <li>RJWAT_rabbit_genitalia</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/XenotypeDef[defName="ATK_Anthrorabbit"]/genes</xpath>
+            <value>
+              <li>RJWAT_rabbit_genitalia</li>
+            </value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/XenotypeDef[defName="ATK_Anthrocow"]/genes/li[text()="rjw_genes_Needle_genitalia"]</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/XenotypeDef[defName="ATK_Anthrocow"]/genes/li[text()="rjw_genes_Needle_genitalia"]</xpath>
+            <value>
+              <li>RJWAT_bovine_genitalia</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/XenotypeDef[defName="ATK_Anthrocow"]/genes</xpath>
+            <value>
+              <li>RJWAT_bovine_genitalia</li>
+            </value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/XenotypeDef[defName="ATK_Anthrobear"]/genes/li[text()="rjw_genes_Needle_genitalia"]</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/XenotypeDef[defName="ATK_Anthrobear"]/genes/li[text()="rjw_genes_Needle_genitalia"]</xpath>
+            <value>
+              <li>RJWAT_bear_genitalia</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/XenotypeDef[defName="ATK_Anthrobear"]/genes</xpath>
+            <value>
+              <li>RJWAT_bear_genitalia</li>
+            </value>
+          </nomatch>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>

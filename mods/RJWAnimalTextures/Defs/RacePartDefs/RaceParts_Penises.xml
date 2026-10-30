@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <rjw.RacePartDef>
+    <defName>FoxPenis</defName>
+    <hediffName>FoxPenis</hediffName>
+  </rjw.RacePartDef>
+
+  <rjw.RacePartDef>
+    <defName>WolfPenis</defName>
+    <hediffName>WolfPenis</hediffName>
+  </rjw.RacePartDef>
+
+  <rjw.RacePartDef>
+    <defName>LynxPenis</defName>
+    <hediffName>LynxPenis</hediffName>
+  </rjw.RacePartDef>
+
+  <rjw.RacePartDef>
+    <defName>DeerPenis</defName>
+    <hediffName>DeerPenis</hediffName>
+  </rjw.RacePartDef>
+
+  <rjw.RacePartDef>
+    <defName>RabbitPenis</defName>
+    <hediffName>RabbitPenis</hediffName>
+  </rjw.RacePartDef>
+
+</Defs>

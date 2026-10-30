@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Fantasy Races</li>
+      <li>Euclidean.FantasyRaces</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="EFR_Deergirl"]/modExtensions/li[@Class="EuclideanFantasyRacesRJW.ModExtension_RJWSettings"]</xpath>
+          <value>
+            <maleGenitals>
+              <li>DeerPenis</li>
+            </maleGenitals>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/XenotypeDef[defName="EFR_Foxgirl"]/modExtensions/li[@Class="EuclideanFantasyRacesRJW.ModExtension_RJWSettings"]/maleGenitals/li[text()="DogPenis"]</xpath>
+          <value>
+            <li>FoxPenis</li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/XenotypeDef[defName="EFR_Wolfgirl"]/modExtensions/li[@Class="EuclideanFantasyRacesRJW.ModExtension_RJWSettings"]/maleGenitals/li[text()="DogPenis"]</xpath>
+          <value>
+            <li>WolfPenis</li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="EFR_Foxgirl"]/genes</xpath>
+          <value>
+            <li>RJWAT_fox_genitalia</li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="EFR_Wolfgirl"]/genes</xpath>
+          <value>
+            <li>RJWAT_wolf_genitalia</li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="EFR_Deergirl"]/genes</xpath>
+          <value>
+            <li>RJWAT_deer_genitalia</li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/XenotypeDef[defName="Yttakin"]</xpath>
+          <value>
+            <li Class="EuclideanFantasyRacesRJW.ModExtension_RJWSettings">
+              <maleGenitals>
+                <li>WolfPenis</li>
+              </maleGenitals>
+            </li>
+          </value>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <RecipeDef ParentName="SexReassignmentP">
+    <defName>AttachFoxPenis</defName>
+    <label>attach fox penis</label>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FoxPenis</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>FoxPenis</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <addsHediff>FoxPenis</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SexReassignmentP">
+    <defName>AttachWolfPenis</defName>
+    <label>attach wolf penis</label>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WolfPenis</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>WolfPenis</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <addsHediff>WolfPenis</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SexReassignmentP">
+    <defName>AttachLynxPenis</defName>
+    <label>attach lynx penis</label>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>LynxPenis</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>LynxPenis</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <addsHediff>LynxPenis</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SexReassignmentP">
+    <defName>AttachDeerPenis</defName>
+    <label>attach deer penis</label>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DeerPenis</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>DeerPenis</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <addsHediff>DeerPenis</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SexReassignmentP">
+    <defName>AttachRabbitPenis</defName>
+    <label>attach rabbit penis</label>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RabbitPenis</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>RabbitPenis</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <addsHediff>RabbitPenis</addsHediff>
+  </RecipeDef>
+
+</Defs>

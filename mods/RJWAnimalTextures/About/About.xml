@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>RJW Animal Textures</name>
+  <author>Mathieu</author>
+  <packageId>mathieu.rjwanimaltextures</packageId>
+  <modVersion>0.1.0</modVersion>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>Cosmetic test build for RimWorld 1.6. Supplies PigPenis, CloacalPenis, ElfPenis, BovinePenis, RaccoonPenis, NeedlePenis, DemonTentaclePenis, HemiPenis, CrocodilianPenis, WolfPenis, LynxPenis, DeerPenis, FoxPenis, and RabbitPenis textures for sizes 0 through 5, resting and aroused, with south, east, and north. PigPenis, BovinePenis, RaccoonPenis, and NeedlePenis keep the sheath or scrotum in the resting penis and in the erect picture, and their ball files are blank. DemonTentaclePenis, ElfPenis, CloacalPenis, CrocodilianPenis, and HemiPenis also use blank ball files, so the default balls are not drawn. WolfPenis uses the whole rest picture, sheath and scrotum together, and the whole erect pictures. Its ball files are blank. LynxPenis rest is a feline sheath: closed on the small sizes, a small opening at size 2, and a more open front on the large sizes, with a side sheath for east. Sizes 0 through 2 add the barbed shaft when aroused. Sizes 3 through 5 are whole erect pictures that already include the scrotum, south pointing up and east pointing up-right. Its ball files are blank. DeerPenis sizes 0 and 1 are a shorter deer, and size 2 is the middle erect. Sizes 3, 4, and 5 keep the long deer, with the horse sheath at rest. Its erect pictures already include the scrotum, so its ball files are blank. FoxPenis uses the whole erect pictures, including the knot. Rest south is the front scrotum and rest east is the side scrotum. South and east ball files are blank. North balls are the rear scrotum. Sizes 0 and 1 of FoxPenis and WolfPenis are a separate small penis with its own scrotum, not a scaled copy of the large one. Size 2 keeps the original fox and wolf. Sizes 3, 4, and 5 are different pictures: slimmer fronts for the fox, thicker sides for the wolf. Aroused east is mirrored so the tip points up-right.  Sized Apparel already renders the existing hediffs; this mod adds the images, and registers FoxPenis, WolfPenis, LynxPenis, DeerPenis, and RabbitPenis so Sized Apparel draws those too. It also adds selectable fox, wolf, lynx, and deer genital genes. Each gene replaces the penis with FoxPenis, WolfPenis, LynxPenis, or DeerPenis. The four genital genes now have sprites. It also adds the lynx ears gene RJWAT_lynx_ears, a head attachment with south, east, and north, sized like the feline ears, and the black-tipped cat ears gene RJWAT_blacktip_cat_ears in that same ear slot, and the lynx tail gene RJWAT_lynx_tail, a body attachment with the same placement as the furry tail. The painted fur is left untinted. Anthrosonae side views move the penis and balls back under the torso. This build has not been tested in-game.</description>
+  <modDependencies>
+    <li>
+      <packageId>rim.job.world</packageId>
+      <displayName>RimJobWorld</displayName>
+    </li>
+    <li>
+      <packageId>ASMR.RJW.RaceSupport</packageId>
+      <displayName>RJW Race Support</displayName>
+    </li>
+    <li>
+      <packageId>Vegapnk.rjw.genes</packageId>
+      <displayName>RJW Genes</displayName>
+    </li>
+    <li>
+      <packageId>OTYOTY.SizedApparel</packageId>
+      <displayName>Sized Apparel for RJW (SAR version)</displayName>
+    </li>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>rim.job.world</li>
+    <li>ASMR.RJW.RaceSupport</li>
+    <li>Vegapnk.rjw.genes</li>
+    <li>OTYOTY.SizedApparel</li>
+    <li>OTYOTY.SizedApparel.extended</li>
+    <li>Euclidean.FantasyRaces</li>
+    <li>ATK.Anthrosonae</li>
+    <li>bipassed.rjw.anthrosonae.basic</li>
+  </loadAfter>
+</ModMetaData>

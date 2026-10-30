@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <GeneDef ParentName="GeneEarsBase">
+    <defName>RJWAT_lynx_ears</defName>
+    <label>lynx ears</label>
+    <description>Carriers of this gene have lynx ears.</description>
+    <iconPath>Genes/Icons/RJWAT_lynx_ears</iconPath>
+    <iconColor>(1, 1, 1)</iconColor>
+    <displayOrderInCategory>71</displayOrderInCategory>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/LynxEars/LynxEars</texPath>
+        <colorType>Hair</colorType>
+        <parentTagDef>Head</parentTagDef>
+        <useSkinShader>false</useSkinShader>
+        <useRottenColor>false</useRottenColor>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <defaultData>
+            <layer>70</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>lynx</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>lynx</symbol></li>
+        <li><symbol>ear</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneEarsBase">
+    <defName>RJWAT_blacktip_cat_ears</defName>
+    <label>black-tipped cat ears</label>
+    <description>Carriers of this gene have cat ears with black tips, white fur, and a pink inner ear.</description>
+    <iconPath>Genes/Icons/RJWAT_blacktip_cat_ears</iconPath>
+    <iconColor>(1, 1, 1)</iconColor>
+    <displayOrderInCategory>72</displayOrderInCategory>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/BlacktipCatEars/BlacktipCatEars</texPath>
+        <colorType>Custom</colorType>
+        <color>(255, 255, 255)</color>
+        <parentTagDef>Head</parentTagDef>
+        <useSkinShader>false</useSkinShader>
+        <useRottenColor>false</useRottenColor>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <defaultData>
+            <layer>70</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>blacktip</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>blacktip</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+</Defs>
