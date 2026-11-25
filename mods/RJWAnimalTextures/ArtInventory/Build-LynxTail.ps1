@@ -1,3 +1,4 @@
+# NOTE 2026-11-16: replaced by Build-LynxTailV2.py (Pillow, outlined hook tail).
 # Retired. Rebuilding would restore the painted tail and drop the hair-color mask.
 exit 0
 

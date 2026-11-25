@@ -1,3 +1,4 @@
+# NOTE 2026-11-07: aroused sizes 0-2 are now built by Build-SmallErect.ps1 (and the fox/lynx scripts). Re-run those after this one.
 # WolfPenis aroused east, sizes 2 to 5, rebuilt as one side-view series.
 # Supersedes Build-WolfSide4.ps1. Writes only to Staging/WolfSideEast, plus a review sheet.
 # Sources, from least to most bulky, all true side views:

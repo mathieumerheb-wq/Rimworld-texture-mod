@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Per-pawn penis variety through Sized Apparel's own variation system.
+     Sized Apparel picks one name from a hediff's entry at random when the penis is created and saves
+     it on the hediff ("default" = the files with no suffix). Files are
+     <hediff>_<size>_<variation>_<direction>.png; a missing variant file falls back to the plain file
+     of the same size. Only applies when Sized Apparel's PenisDetail variation def is loaded. -->
+<Patch>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/SizedApparel.SizedApparelBodyPartVariationDef[defName="PenisDetail"]/variations</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/SizedApparel.SizedApparelBodyPartVariationDef[defName="PenisDetail"]/variations</xpath>
+      <value>
+        <li>
+          <!-- Each: the current look, a slender build (80% width) and a thick build (125% width). Lynx also has
+               Spiny (bigger barbs), fox BigKnot (drawn bigger knot), deer Flared (bigger flared tip);
+               those three only have aroused files, so their rest falls back to the plain rest. -->
+          <hediffName>LynxPenis</hediffName>
+          <varName>
+            <li>default</li>
+            <li>Slender</li>
+            <li>Thick</li>
+            <li>Spiny</li>
+          </varName>
+        </li>
+        <li>
+          <hediffName>FoxPenis</hediffName>
+          <varName>
+            <li>default</li>
+            <li>Slender</li>
+            <li>Thick</li>
+            <li>BigKnot</li>
+          </varName>
+        </li>
+        <li>
+          <hediffName>WolfPenis</hediffName>
+          <varName>
+            <li>default</li>
+            <li>Slender</li>
+            <li>Thick</li>
+          </varName>
+        </li>
+        <li>
+          <hediffName>RabbitPenis</hediffName>
+          <varName>
+            <li>default</li>
+            <li>Slender</li>
+            <li>Thick</li>
+          </varName>
+        </li>
+        <li>
+          <!-- Elf: the current look, Uncut and Foreskin (from Sized Apparel's human variants with the
+               elf warp, so human-origin penises carrying those names show them), and Slender. -->
+          <hediffName>ElfPenis</hediffName>
+          <varName>
+            <li>default</li>
+            <li>Uncut</li>
+            <li>Foreskin</li>
+            <li>Slender</li>
+          </varName>
+        </li>
+        <li>
+          <hediffName>DeerPenis</hediffName>
+          <varName>
+            <li>default</li>
+            <li>Slender</li>
+            <li>Thick</li>
+            <li>Flared</li>
+          </varName>
+        </li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- Dragon: Sized Apparel already lists DragonPenis with "RNW" (the paste set, the current look).
+       Slender and Thick are added beside it; their files are in this mod. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/SizedApparel.SizedApparelBodyPartVariationDef[defName="PenisDetail"]/variations/li[hediffName="DragonPenis"]/varName</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/SizedApparel.SizedApparelBodyPartVariationDef[defName="PenisDetail"]/variations/li[hediffName="DragonPenis"]/varName</xpath>
+      <value>
+        <li>Slender</li>
+        <li>Thick</li>
+      </value>
+    </match>
+  </Operation>
+
+</Patch>

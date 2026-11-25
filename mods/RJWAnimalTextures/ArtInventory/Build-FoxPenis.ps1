@@ -4,6 +4,7 @@
 # Aroused south is the whole front picture, knot included, pointing up.
 # Aroused east is the whole side picture, mirrored so the tip points up-right.
 # North balls are the rear scrotum. North penis is blank.
+# FoxPenis aroused 2 is replaced by Build-FoxFix.ps1 (2026-11-07): this art had no scrotum.
 Add-Type -AssemblyName System.Drawing
 
 $ErrorActionPreference = "Stop"

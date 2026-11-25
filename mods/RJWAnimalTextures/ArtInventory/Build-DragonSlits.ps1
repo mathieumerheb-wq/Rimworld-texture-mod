@@ -276,7 +276,7 @@ public static class DragonSlits
 
 $src = "C:\Users\mathi\.cursor\projects\c-Users-mathi-Documents-Rimworld-new-mods\assets"
 $inv = "C:\Users\mathi\Documents\Rimworld new mods\mods\RJWAnimalTextures\ArtInventory\TextureV2"
-$live = "C:\Users\mathi\Documents\Rimworld new mods\sized-apparel-zero\Textures\SizedApparel\BodyParts\Human\Penis"
+$live = "C:\Users\mathi\Documents\Rimworld new mods\mods\RJWAnimalTextures\Textures\SizedApparel\BodyParts\Human\Penis"
 Copy-Item (Join-Path $src "c__Users_mathi_AppData_Roaming_Cursor_User_workspaceStorage_f286a127b07b48d0b85590b38d17346c_images_Capture_d__cran_2026-10-15_103236-e46f0aea-7d1a-459f-a396-26b05cb8b229.png") (Join-Path $inv "ref-dragon-slit-front-closed.png")
 Copy-Item (Join-Path $src "c__Users_mathi_AppData_Roaming_Cursor_User_workspaceStorage_f286a127b07b48d0b85590b38d17346c_images_Capture_d__cran_2026-10-15_103231-e75e3779-9282-49a8-a869-883ca9a6adbd.png") (Join-Path $inv "ref-dragon-slit-front-mid.png")
 Copy-Item (Join-Path $src "c__Users_mathi_AppData_Roaming_Cursor_User_workspaceStorage_f286a127b07b48d0b85590b38d17346c_images_Capture_d__cran_2026-10-15_103234-f57110bb-a81f-4145-b56e-c28ed018e8e9.png") (Join-Path $inv "ref-dragon-slit-front-wide.png")

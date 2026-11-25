@@ -82,7 +82,7 @@ public static class ReviewSheets
 }
 '@
 
-$root = "C:\Users\mathi\Documents\Rimworld new mods\sized-apparel-zero\Textures\SizedApparel\BodyParts\Human\Penis"
+$root = "C:\Users\mathi\Documents\Rimworld new mods\mods\RJWAnimalTextures\Textures\SizedApparel\BodyParts\Human\Penis"
 $out = "C:\Users\mathi\Documents\Rimworld new mods\mods\RJWAnimalTextures\ArtInventory"
 [ReviewSheets]::Build($root, "DragonPenis", (Join-Path $out "review-DragonPenis.png"))
 [ReviewSheets]::Build($root, "CatPenis", (Join-Path $out "review-CatPenis.png"))

@@ -99,7 +99,7 @@ public static class DragonLarge
 }
 '@
 
-$horny = "C:\Users\mathi\Documents\Rimworld new mods\sized-apparel-zero\Textures\SizedApparel\BodyParts\Human\Penis\Horny"
+$horny = "C:\Users\mathi\Documents\Rimworld new mods\mods\RJWAnimalTextures\Textures\SizedApparel\BodyParts\Human\Penis\Horny"
 [DragonLarge]::Scale((Join-Path $horny "DragonPenis_5_RNW_south.png"), 200, 282, $false)
 [DragonLarge]::Scale((Join-Path $horny "DragonPenis_3_RNW_east.png"), 130, 286, $true)
 [DragonLarge]::Scale((Join-Path $horny "DragonPenis_4_RNW_east.png"), 144, 286, $true)

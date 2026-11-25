@@ -1,6 +1,7 @@
 # Lynx rests are the feline sheath pictures, so the lynx is not the fox scrotum.
 # Erect sizes 3-5 are whole pictures that already include the scrotum.
 # Sizes 0-2 erect are left as they are. Balls and north stay blank.
+# LynxPenis aroused 0-2 are written by Build-LynxSmallErect.ps1 (2026-11-07), from the size 3 picture.
 Add-Type -AssemblyName System.Drawing
 
 $ErrorActionPreference = "Stop"

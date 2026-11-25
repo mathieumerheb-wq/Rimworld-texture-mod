@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Points the RJW Genes species genital genes at the Race Support part of the same species.
+  RJW Genes leaves these on the human Anus (or leaves the field empty), even where Race Support
+  has a matching part. Every xenotype carrying one of these genes picks up the change.
+  Breasts change only for species that are fully scaled (dragon) or orcs.
+-->
+<Patch>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="rjw_genes_dragon_genitalia"]/modExtensions/li[@Class="RJW_Genes.GenitaliaTypeExtension"]/anus</xpath>
+    <value>
+      <anus>DragonAnus</anus>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/GeneDef[defName="rjw_genes_dragon_genitalia"]/modExtensions/li[@Class="RJW_Genes.GenitaliaTypeExtension"]</xpath>
+    <value>
+      <breasts>ScaleBreasts</breasts>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="rjw_genes_feline_genitalia"]/modExtensions/li[@Class="RJW_Genes.GenitaliaTypeExtension"]/anus</xpath>
+    <value>
+      <anus>FelineAnus</anus>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="rjw_genes_canine_genitalia"]/modExtensions/li[@Class="RJW_Genes.GenitaliaTypeExtension"]/anus</xpath>
+    <value>
+      <anus>DogAnus</anus>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="rjw_genes_equine_genitalia"]/modExtensions/li[@Class="RJW_Genes.GenitaliaTypeExtension"]/anus</xpath>
+    <value>
+      <anus>HorseAnus</anus>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/GeneDef[defName="rjw_genes_crocodilian_genitalia"]/modExtensions/li[@Class="RJW_Genes.GenitaliaTypeExtension"]</xpath>
+    <value>
+      <vagina>CloacalVagina</vagina>
+      <anus>CloacalAnus</anus>
+    </value>
+  </Operation>
+
+  <!-- RJW Genes loads the orc gene only with Race Support, which this mod requires. -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/GeneDef[defName="rjw_genes_Orc_genitalia"]/modExtensions/li[@Class="RJW_Genes.GenitaliaTypeExtension"]</xpath>
+    <value>
+      <anus>OrcAnus</anus>
+      <breasts>OrcBreasts</breasts>
+    </value>
+  </Operation>
+
+</Patch>

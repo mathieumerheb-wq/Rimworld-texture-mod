@@ -1,5 +1,6 @@
 # Retired. Rests and erect sizes 3-5 are written by Build-LynxVariety.ps1.
 # Sizes 0-2 erect stay as the last files this script wrote.
+# LynxPenis aroused 0-2 from this script are replaced by Build-LynxSmallErect.ps1 (2026-11-07).
 Write-Host "Build-LynxPenis.ps1 is retired. Use Build-LynxVariety.ps1."
 exit 0
 Add-Type -AssemblyName System.Drawing

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Gives species xenotypes that had only human parts the genital gene of their species.
+  Each operation succeeds whether or not the xenotype's mod is loaded.
+  Humanlike xenotypes (Biotech humans, Highmate, WVC, Fungoid, Insector, undead) are left alone.
+-->
+<Patch>
+
+  <!-- Pigskin and boarskin: RJW Genes ships the pig gene commented out, in favour of human genitalia.
+       This mod requires Race Support, so the pig parts exist. -->
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/XenotypeDef[defName="Pigskin" or defName="VRE_Boarskin"]/genes/li[text()="rjw_genes_human_genitalia"]</xpath>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/XenotypeDef[defName="Pigskin" or defName="VRE_Boarskin"]/genes</xpath>
+    <value>
+      <li>rjw_genes_Pig_genitalia</li>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <!-- Biotech Expanded Mammalia and Mythic -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/XenotypeDef[defName="Wiretail"]/genes</xpath>
+    <value>
+      <li>rjw_genes_rodent_genitalia</li>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/XenotypeDef[defName="Hindhopper"]/genes</xpath>
+    <value>
+      <li>RJWAT_rabbit_genitalia</li>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/XenotypeDef[defName="Cloudpuff" or defName="Devilpuff"]/genes</xpath>
+    <value>
+      <li>RJWAT_bovine_genitalia</li>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/XenotypeDef[defName="Hidewing"]/genes</xpath>
+    <value>
+      <li MayRequire="akiya82.spawn.rjw.genes">rjw_genes_mammal_genitalia</li>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/XenotypeDef[defName="Ashfeather"]/genes</xpath>
+    <value>
+      <li>rjw_genes_cloacal_genitalia</li>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <!-- Alpha Genes -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/XenotypeDef[defName="AG_Hiveling"]/genes</xpath>
+    <value>
+      <li>rjw_genes_ovipositor_genitalia</li>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/XenotypeDef[defName="AG_Nereid"]/genes</xpath>
+    <value>
+      <li MayRequire="ROBTRG.RJWAditionalXenoPatchs">ROBTRG_marine_genitalia</li>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <!-- Phytokin sub-xenotypes (Vanilla Races Expanded - Phytokin, Alpha Genes ocularkin) -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/XenotypeDef[defName="VRE_Animakin" or defName="VRE_Gauranlenkin" or defName="VRE_Poluxkin" or defName="VRE_Ocularkin"]/genes</xpath>
+    <value>
+      <li MayRequire="ROBTRG.RJWAditionalXenoPatchs">ROBTRG_Tree_genitalia</li>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+</Patch>

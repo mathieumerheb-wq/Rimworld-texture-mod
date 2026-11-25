@@ -178,7 +178,7 @@ public static class DragonFront234
 '@
 
 $inv = "C:\Users\mathi\Documents\Rimworld new mods\mods\RJWAnimalTextures\ArtInventory\TextureV2"
-$horny = "C:\Users\mathi\Documents\Rimworld new mods\sized-apparel-zero\Textures\SizedApparel\BodyParts\Human\Penis\Horny"
+$horny = "C:\Users\mathi\Documents\Rimworld new mods\mods\RJWAnimalTextures\Textures\SizedApparel\BodyParts\Human\Penis\Horny"
 $sources = @(
     (Join-Path $inv "ref-dragon-front-s2.png"),
     (Join-Path $inv "ref-dragon-front-s3.png"),

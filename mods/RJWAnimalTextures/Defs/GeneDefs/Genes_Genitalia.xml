@@ -5,7 +5,7 @@
     <defName>RJWAT_fox_genitalia</defName>
     <label>fox genitalia</label>
     <description>Carriers of this gene have fox genitalia.</description>
-    <iconPath>Genes/Icons/RJWAT_fox</iconPath>
+    <iconPath>Genes/Icons/Status/RJWAT_fox_genitalia</iconPath>
     <modExtensions>
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>FoxPenis</penis>
@@ -20,7 +20,7 @@
     <defName>RJWAT_wolf_genitalia</defName>
     <label>wolf genitalia</label>
     <description>Carriers of this gene have wolf genitalia.</description>
-    <iconPath>Genes/Icons/RJWAT_wolf</iconPath>
+    <iconPath>Genes/Icons/Status/RJWAT_wolf_genitalia</iconPath>
     <modExtensions>
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>WolfPenis</penis>
@@ -35,7 +35,7 @@
     <defName>RJWAT_lynx_genitalia</defName>
     <label>lynx genitalia</label>
     <description>Carriers of this gene have lynx genitalia.</description>
-    <iconPath>Genes/Icons/RJWAT_lynx</iconPath>
+    <iconPath>Genes/Icons/Status/RJWAT_lynx_genitalia</iconPath>
     <modExtensions>
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>LynxPenis</penis>
@@ -50,11 +50,11 @@
     <defName>RJWAT_deer_genitalia</defName>
     <label>deer genitalia</label>
     <description>Carriers of this gene have deer genitalia.</description>
-    <iconPath>Genes/Icons/RJWAT_deer</iconPath>
+    <iconPath>Genes/Icons/Status/RJWAT_deer_genitalia</iconPath>
     <modExtensions>
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>DeerPenis</penis>
-        <vagina>Vagina</vagina>
+        <vagina>MammalVagina</vagina>
         <anus>CervineAnus</anus>
       </li>
     </modExtensions>
@@ -64,13 +64,13 @@
   <GeneDef ParentName="GeneGenitalTypeBase">
     <defName>RJWAT_rabbit_genitalia</defName>
     <label>rabbit genitalia</label>
-    <description>Carriers of this gene have a rabbit penis, with a human vagina and anus.</description>
-    <iconPath>Genes/Icons/RJWAT_rabbit</iconPath>
+    <description>Carriers of this gene have rabbit genitalia.</description>
+    <iconPath>Genes/Icons/Status/RJWAT_rabbit_genitalia</iconPath>
     <modExtensions>
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>RabbitPenis</penis>
-        <vagina>Vagina</vagina>
-        <anus>Anus</anus>
+        <vagina>RodentVagina</vagina>
+        <anus>MammalAnus</anus>
       </li>
     </modExtensions>
     <displayOrderInCategory>812</displayOrderInCategory>
@@ -80,12 +80,12 @@
     <defName>RJWAT_bovine_genitalia</defName>
     <label>bovine genitalia</label>
     <description>Carriers of this gene have bovine genitalia.</description>
-    <iconPath>Genes/Icons/RJWAT_bovine</iconPath>
+    <iconPath>Genes/Icons/Status/RJWAT_bovine_genitalia</iconPath>
     <modExtensions>
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>BovinePenis</penis>
         <vagina>BovineVagina</vagina>
-        <anus>Anus</anus>
+        <anus>MammalAnus</anus>
       </li>
     </modExtensions>
     <displayOrderInCategory>813</displayOrderInCategory>
@@ -94,16 +94,60 @@
   <GeneDef ParentName="GeneGenitalTypeBase">
     <defName>RJWAT_bear_genitalia</defName>
     <label>bear genitalia</label>
-    <description>Carriers of this gene have a bear penis, with a human vagina and anus.</description>
-    <iconPath>Genes/Icons/RJWAT_bear</iconPath>
+    <description>Carriers of this gene have bear genitalia.</description>
+    <iconPath>Genes/Icons/Status/RJWAT_bear_genitalia</iconPath>
     <modExtensions>
       <li Class="RJW_Genes.GenitaliaTypeExtension">
         <penis>BearPenis</penis>
-        <vagina>Vagina</vagina>
-        <anus>Anus</anus>
+        <vagina>MammalVagina</vagina>
+        <anus>MammalAnus</anus>
       </li>
     </modExtensions>
     <displayOrderInCategory>814</displayOrderInCategory>
+  </GeneDef>
+
+  <!-- No hyena sprite exists, so the penis is the fox sprite; the vagina stays the Race Support hyena one. -->
+  <GeneDef ParentName="GeneGenitalTypeBase">
+    <defName>RJWAT_hyena_genitalia</defName>
+    <label>hyena genitalia</label>
+    <description>Carriers of this gene have hyena genitalia.</description>
+    <iconPath>Genes/Icons/Status/ROBTRG_Anthro_Hyena_genitalia</iconPath>
+    <modExtensions>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <penis>FoxPenis</penis>
+        <vagina>HyenaVagina</vagina>
+        <anus>DogAnus</anus>
+      </li>
+    </modExtensions>
+    <displayOrderInCategory>815</displayOrderInCategory>
+  </GeneDef>
+
+  <!-- Breasts only, so a full anthro can pair it with any genital gene above. It has its own
+       exclusion tag and runs after the genital genes (order 31), and leaves the other parts alone. -->
+  <GeneDef>
+    <defName>RJWAT_mammal_breasts</defName>
+    <label>mammal breasts</label>
+    <description>Carriers of this gene have mammal breasts.</description>
+    <iconPath>Genes/Icons/Extra_Breasts</iconPath>
+    <displayCategory>rjw_genes_genitalia_type</displayCategory>
+    <geneClass>RJW_Genes.Gene_GenitaliaType</geneClass>
+    <exclusionTags>
+      <li>RJWAT_BreastType</li>
+    </exclusionTags>
+    <biostatCpx>0</biostatCpx>
+    <modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
+        <backgroundPathEndogenes>Genes/Icons/RJW_Genes_Endogene_Background</backgroundPathEndogenes>
+        <backgroundPathXenogenes>Genes/Icons/RJW_Genes_Xenogene_Background</backgroundPathXenogenes>
+      </li>
+      <li Class="RJW_Genes.SexualizerGeneExtension">
+        <order>31</order>
+      </li>
+      <li Class="RJW_Genes.GenitaliaTypeExtension">
+        <breasts>MammalBreasts</breasts>
+      </li>
+    </modExtensions>
+    <displayOrderInCategory>815</displayOrderInCategory>
   </GeneDef>
 
 </Defs>

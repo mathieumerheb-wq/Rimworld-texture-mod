@@ -277,7 +277,7 @@ public static class DragonPenis
 '@
 
 $inv = "C:\Users\mathi\Documents\Rimworld new mods\mods\RJWAnimalTextures\ArtInventory\TextureV2"
-$live = "C:\Users\mathi\Documents\Rimworld new mods\sized-apparel-zero\Textures\SizedApparel\BodyParts\Human\Penis"
+$live = "C:\Users\mathi\Documents\Rimworld new mods\mods\RJWAnimalTextures\Textures\SizedApparel\BodyParts\Human\Penis"
 [DragonPenis]::Build(
     (Join-Path $inv "reference-dragon-slit.png"),
     (Join-Path $inv "reference-dragon-south.png"),

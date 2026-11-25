@@ -1,5 +1,9 @@
+# NOTE 2026-11-12: after this script, run Build-FillHoles.ps1 -Gap 2 on the south and east outputs (rest and Horny); the source pictures have see-through holes in the scrotum.
 # Builds the CatPenis replacement for the Sized Apparel paste folder.
-# Reads TextureV2 refs. Writes sized-apparel-zero Textures. Balls and north are blank.
+# Reads TextureV2 refs. Writes this mod's Textures (the cat set moved here on 2026-11-25), or -OutRoot (a staging folder). Balls and north are blank.
+# 2026-11-12: aroused heights moved onto the same ladder as this mod's penises (south 72, 96, 120, 144, 167, 199;
+# east 70, 90, 110, 130, 144, 180). The earlier 40-120 heights made a large cat smaller than a small lynx.
+param([string]$OutRoot = "C:\Users\mathi\Documents\Rimworld new mods\mods\RJWAnimalTextures\Textures\SizedApparel\BodyParts\Human\Penis")
 Add-Type -AssemblyName System.Drawing
 $ErrorActionPreference = "Stop"
 
@@ -352,10 +356,11 @@ public static class CatPenisBuild
 '@
 
 $v2 = "C:\Users\mathi\Documents\Rimworld new mods\mods\RJWAnimalTextures\ArtInventory\TextureV2"
-$live = "C:\Users\mathi\Documents\Rimworld new mods\sized-apparel-zero\Textures\SizedApparel\BodyParts\Human\Penis"
+$live = $OutRoot
 $horny = Join-Path $live "Horny"
 $balls = Join-Path $live "Balls"
-$southH = @(40, 46, 64, 79, 92, 120)
+$southH = @(72, 96, 120, 144, 167, 199)
+$eastH = @(70, 90, 110, 130, 144, 180)
 $restH = @(27, 37, 59, 61, 67, 81)
 $southBase = @(268, 268, 268, 268, 268, 282)
 $eastBase = @(282, 282, 286, 286, 286, 300)
@@ -366,7 +371,7 @@ for ($i = 0; $i -le 5; $i++) {
     $eastName = "CatPenis_{0}_RNW_east.png" -f $i
     $northName = "CatPenis_{0}_RNW_north.png" -f $i
     [CatPenisBuild]::Sprite((Join-Path $v2 ("ref-cat-erect-s{0}.png" -f $i)), (Join-Path $horny $southName), "south", $southH[$i], $southBase[$i])
-    [CatPenisBuild]::Sprite((Join-Path $v2 ("ref-cat-erect-e{0}.png" -f $i)), (Join-Path $horny $eastName), "east", $southH[$i], $eastBase[$i])
+    [CatPenisBuild]::Sprite((Join-Path $v2 ("ref-cat-erect-e{0}.png" -f $i)), (Join-Path $horny $eastName), "east", $eastH[$i], $eastBase[$i])
     [CatPenisBuild]::Blank((Join-Path $horny $northName))
     [CatPenisBuild]::Sprite((Join-Path $v2 ("ref-cat-rest-s{0}.png" -f $i)), (Join-Path $live $southName), "rest-south", $restH[$i], $southBase[$i])
     [CatPenisBuild]::Sprite((Join-Path $v2 ("ref-cat-rest-{0}.png" -f $eastRest[$i])), (Join-Path $live $eastName), "rest-east", $restH[$i], $eastBase[$i])

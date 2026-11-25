@@ -15,6 +15,12 @@
     <anuses>
       <li>DogAnus</li>
     </anuses>
+    <femaleBreasts>
+      <li>MammalBreasts</li>
+    </femaleBreasts>
+    <maleBreasts>
+      <li>MammalBreasts</li>
+    </maleBreasts>
     <tags>
       <li>Fur</li>
     </tags>
@@ -38,6 +44,12 @@
     <anuses>
       <li>DogAnus</li>
     </anuses>
+    <femaleBreasts>
+      <li>MammalBreasts</li>
+    </femaleBreasts>
+    <maleBreasts>
+      <li>MammalBreasts</li>
+    </maleBreasts>
     <tags>
       <li>Fur</li>
     </tags>
@@ -56,11 +68,17 @@
       <li>DeerPenis</li>
     </maleGenitals>
     <femaleGenitals>
-      <li>Vagina</li>
+      <li>MammalVagina</li>
     </femaleGenitals>
     <anuses>
       <li>CervineAnus</li>
     </anuses>
+    <femaleBreasts>
+      <li>MammalBreasts</li>
+    </femaleBreasts>
+    <maleBreasts>
+      <li>MammalBreasts</li>
+    </maleBreasts>
     <tags>
       <li>Fur</li>
     </tags>
@@ -79,11 +97,17 @@
       <li>RabbitPenis</li>
     </maleGenitals>
     <femaleGenitals>
-      <li>Vagina</li>
+      <li>RodentVagina</li>
     </femaleGenitals>
     <anuses>
-      <li>Anus</li>
+      <li>MammalAnus</li>
     </anuses>
+    <femaleBreasts>
+      <li>MammalBreasts</li>
+    </femaleBreasts>
+    <maleBreasts>
+      <li>MammalBreasts</li>
+    </maleBreasts>
     <tags>
       <li>Fur</li>
     </tags>
@@ -105,8 +129,14 @@
       <li>BovineVagina</li>
     </femaleGenitals>
     <anuses>
-      <li>Anus</li>
+      <li>MammalAnus</li>
     </anuses>
+    <femaleBreasts>
+      <li>MammalBreasts</li>
+    </femaleBreasts>
+    <maleBreasts>
+      <li>MammalBreasts</li>
+    </maleBreasts>
     <tags>
       <li>Fur</li>
     </tags>
@@ -125,11 +155,46 @@
       <li>BearPenis</li>
     </maleGenitals>
     <femaleGenitals>
-      <li>Vagina</li>
+      <li>MammalVagina</li>
     </femaleGenitals>
     <anuses>
-      <li>Anus</li>
+      <li>MammalAnus</li>
     </anuses>
+    <femaleBreasts>
+      <li>MammalBreasts</li>
+    </femaleBreasts>
+    <maleBreasts>
+      <li>MammalBreasts</li>
+    </maleBreasts>
+    <tags>
+      <li>Fur</li>
+    </tags>
+    <hasSingleGender>false</hasSingleGender>
+    <hasSexNeed>true</hasSexNeed>
+    <hasFertility>true</hasFertility>
+    <hasPregnancy>true</hasPregnancy>
+  </rjw.RaceGroupDef>
+
+  <rjw.RaceGroupDef>
+    <defName>RJWAT_Anthrohyena</defName>
+    <pawnKindNames>
+      <li>ATK_AnthrohyenaColonist</li>
+    </pawnKindNames>
+    <maleGenitals>
+      <li>FoxPenis</li>
+    </maleGenitals>
+    <femaleGenitals>
+      <li>HyenaVagina</li>
+    </femaleGenitals>
+    <anuses>
+      <li>DogAnus</li>
+    </anuses>
+    <femaleBreasts>
+      <li>MammalBreasts</li>
+    </femaleBreasts>
+    <maleBreasts>
+      <li>MammalBreasts</li>
+    </maleBreasts>
     <tags>
       <li>Fur</li>
     </tags>

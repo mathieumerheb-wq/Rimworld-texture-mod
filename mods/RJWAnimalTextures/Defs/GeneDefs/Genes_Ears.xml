@@ -39,17 +39,17 @@
   <GeneDef ParentName="GeneEarsBase">
     <defName>RJWAT_blacktip_cat_ears</defName>
     <label>black-tipped cat ears</label>
-    <description>Carriers of this gene have cat ears with black tips, white fur, and a pink inner ear.</description>
+    <description>Carriers of this gene have cat ears with black tips, fur in their hair color, and a pink inner ear.</description>
     <iconPath>Genes/Icons/RJWAT_blacktip_cat_ears</iconPath>
     <iconColor>(1, 1, 1)</iconColor>
     <displayOrderInCategory>72</displayOrderInCategory>
     <renderNodeProperties>
+      <!-- Fur: a gray mask in the hair color. The black tips stay dark. -->
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
         <texPath>Things/Pawn/Humanlike/HeadAttachments/BlacktipCatEars/BlacktipCatEars</texPath>
-        <colorType>Custom</colorType>
-        <color>(255, 255, 255)</color>
+        <colorType>Hair</colorType>
         <parentTagDef>Head</parentTagDef>
         <useSkinShader>false</useSkinShader>
         <useRottenColor>false</useRottenColor>
@@ -60,6 +60,23 @@
           </defaultData>
         </drawData>
       </li>
+      <!-- Pink inner ear, untinted, just above the fur. North is blank. -->
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/BlacktipCatEars/BlacktipCatEarsInner</texPath>
+        <colorType>Custom</colorType>
+        <color>(255, 255, 255)</color>
+        <parentTagDef>Head</parentTagDef>
+        <useSkinShader>false</useSkinShader>
+        <useRottenColor>false</useRottenColor>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <defaultData>
+            <layer>70.5</layer>
+          </defaultData>
+        </drawData>
+      </li>
     </renderNodeProperties>
     <symbolPack>
       <prefixSymbols>
@@ -67,6 +84,135 @@
       </prefixSymbols>
       <suffixSymbols>
         <li><symbol>blacktip</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <!-- Pointed dragon ears with a pair of short horns, one picture per view. Drawn behind the head
+       (layer 45; the head is 50, hair 62) so the head's outline covers the bases. -->
+  <GeneDef ParentName="GeneEarsBase">
+    <defName>RJWAT_dragon_ears</defName>
+    <label>dragon ears</label>
+    <description>Carriers of this gene have pointed, ridged dragon ears and a pair of short horns.</description>
+    <iconPath>Genes/Icons/RJWAT_dragon_ears</iconPath>
+    <iconColor>(1, 1, 1)</iconColor>
+    <displayOrderInCategory>73</displayOrderInCategory>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/DragonEars/DragonEars</texPath>
+        <colorType>Hair</colorType>
+        <parentTagDef>Head</parentTagDef>
+        <useSkinShader>false</useSkinShader>
+        <useRottenColor>false</useRottenColor>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <defaultData>
+            <layer>45</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>drake</symbol></li>
+        <li><symbol>wyrm</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>horn</symbol></li>
+        <li><symbol>drake</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <!-- Tall upright horse ears, in the hair color. Drawn behind the head (layer 45) like the dragon ears. -->
+  <GeneDef ParentName="GeneEarsBase">
+    <defName>RJWAT_horse_ears</defName>
+    <label>horse ears</label>
+    <description>Carriers of this gene have tall, upright horse ears.</description>
+    <iconPath>Genes/Icons/RJWAT_horse_ears</iconPath>
+    <iconColor>(1, 1, 1)</iconColor>
+    <displayOrderInCategory>74</displayOrderInCategory>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/HorseEars/HorseEars</texPath>
+        <colorType>Hair</colorType>
+        <parentTagDef>Head</parentTagDef>
+        <useSkinShader>false</useSkinShader>
+        <useRottenColor>false</useRottenColor>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <defaultData>
+            <layer>45</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>mare</symbol></li>
+        <li><symbol>colt</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>mane</symbol></li>
+        <li><symbol>hoof</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <!-- Large oval deer ears in the hair color, and branching antlers in a fixed antler brown, as two
+       layers. Both drawn behind the head (antlers 44, ears 45) so the head covers their bases. -->
+  <GeneDef ParentName="GeneEarsBase">
+    <defName>RJWAT_deer_ears</defName>
+    <label>deer ears and antlers</label>
+    <description>Carriers of this gene have large deer ears and a pair of branching antlers.</description>
+    <iconPath>Genes/Icons/RJWAT_deer_ears</iconPath>
+    <iconColor>(1, 1, 1)</iconColor>
+    <displayOrderInCategory>75</displayOrderInCategory>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/DeerEars/DeerAntlers</texPath>
+        <colorType>Custom</colorType>
+        <color>(190, 150, 110)</color>
+        <parentTagDef>Head</parentTagDef>
+        <useSkinShader>false</useSkinShader>
+        <useRottenColor>false</useRottenColor>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <defaultData>
+            <layer>44</layer>
+          </defaultData>
+        </drawData>
+      </li>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/DeerEars/DeerEars</texPath>
+        <colorType>Hair</colorType>
+        <parentTagDef>Head</parentTagDef>
+        <useSkinShader>false</useSkinShader>
+        <useRottenColor>false</useRottenColor>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <defaultData>
+            <layer>45</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>doe</symbol></li>
+        <li><symbol>stag</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>antler</symbol></li>
+        <li><symbol>fawn</symbol></li>
       </suffixSymbols>
     </symbolPack>
   </GeneDef>

@@ -1,3 +1,4 @@
+# NOTE 2026-11-13: the live ears were re-placed by Build-EarFix.ps1 (hair-color fur, separate pink inner layer). Re-running this restores the old ears.
 # Black-tipped cat ears. South is the front pair, north is the back, east is the side ear.
 # They sit on a 512 canvas in the same place as the feline ears.
 # The gray disk under the side ear is dropped. Painted fur stays its own color.

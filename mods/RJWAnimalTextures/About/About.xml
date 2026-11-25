@@ -40,5 +40,7 @@
     <li>Euclidean.FantasyRaces</li>
     <li>ATK.Anthrosonae</li>
     <li>bipassed.rjw.anthrosonae.basic</li>
+    <li>ROBTRG.RJWAditionalXenoPatchs</li>
+    <li>akiya82.spawn.rjw.genes</li>
   </loadAfter>
 </ModMetaData>

@@ -105,6 +105,142 @@
           </nomatch>
         </li>
 
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/XenotypeDef[defName="ATK_Anthropanda"]/genes/li[text()="rjw_genes_Needle_genitalia"]</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/XenotypeDef[defName="ATK_Anthropanda"]/genes/li[text()="rjw_genes_Needle_genitalia"]</xpath>
+            <value>
+              <li>RJWAT_bear_genitalia</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/XenotypeDef[defName="ATK_Anthropanda"]/genes</xpath>
+            <value>
+              <li>RJWAT_bear_genitalia</li>
+            </value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/XenotypeDef[defName="ATK_Anthrohyena"]/genes/li[text()="rjw_genes_Needle_genitalia"]</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/XenotypeDef[defName="ATK_Anthrohyena"]/genes/li[text()="rjw_genes_Needle_genitalia"]</xpath>
+            <value>
+              <li>RJWAT_hyena_genitalia</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/XenotypeDef[defName="ATK_Anthrohyena"]/genes</xpath>
+            <value>
+              <li>RJWAT_hyena_genitalia</li>
+            </value>
+          </nomatch>
+        </li>
+
+        <!-- RJW Extra Xenotype Patches adds its own ROBTRG_Anthro_* genital gene to every anthro.
+             Where this mod supplies the penis, drop that second genital gene, so only one applies. -->
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/XenotypeDef[defName="ATK_Anthrofox" or defName="ATK_Anthrowolf" or defName="ATK_Anthrodeer" or defName="ATK_Anthrorabbit" or defName="ATK_Anthrocow" or defName="ATK_Anthrobear" or defName="ATK_Anthropanda" or defName="ATK_Anthrohyena"]/genes/li[starts-with(text(),"ROBTRG_Anthro_")]</xpath>
+          <success>Always</success>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/XenotypeDef[defName="ATK_Anthrofox" or defName="ATK_Anthrowolf" or defName="ATK_Anthrodeer" or defName="ATK_Anthrorabbit" or defName="ATK_Anthrocow" or defName="ATK_Anthrobear" or defName="ATK_Anthropanda" or defName="ATK_Anthrohyena"]/genes</xpath>
+          <value>
+            <li>RJWAT_mammal_breasts</li>
+          </value>
+        </li>
+
+        <!-- The other anthros: keep the ROBTRG_Anthro_* gene when it is there, since it already has the
+             species vagina, anus, and breasts, and drop the RJW Anthrosonae Support gene beside it.
+             Without that mod, the support gene stays, and furred anthros get mammal breasts. -->
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/XenotypeDef[defName="ATK_Anthrocat"]/genes/li[starts-with(text(),"ROBTRG_Anthro_")]</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/XenotypeDef[defName="ATK_Anthrocat"]/genes/li[text()="rjw_genes_feline_genitalia"]</xpath>
+            <success>Always</success>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/XenotypeDef[defName="ATK_Anthrocat"]/genes</xpath>
+            <value>
+              <li>RJWAT_mammal_breasts</li>
+            </value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/XenotypeDef[defName="ATK_Anthrogriff"]/genes/li[starts-with(text(),"ROBTRG_Anthro_")]</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/XenotypeDef[defName="ATK_Anthrogriff"]/genes/li[text()="rjw_genes_feline_genitalia"]</xpath>
+            <success>Always</success>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/XenotypeDef[defName="ATK_Anthrogriff"]/genes</xpath>
+            <value>
+              <li>RJWAT_mammal_breasts</li>
+            </value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/XenotypeDef[defName="ATK_Anthrohorse"]/genes/li[starts-with(text(),"ROBTRG_Anthro_")]</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/XenotypeDef[defName="ATK_Anthrohorse"]/genes/li[text()="rjw_genes_equine_genitalia"]</xpath>
+            <success>Always</success>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/XenotypeDef[defName="ATK_Anthrohorse"]/genes</xpath>
+            <value>
+              <li>RJWAT_mammal_breasts</li>
+            </value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/XenotypeDef[defName="ATK_Anthrogoat"]/genes/li[starts-with(text(),"ROBTRG_Anthro_")]</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/XenotypeDef[defName="ATK_Anthrogoat"]/genes/li[text()="rjw_genes_Needle_genitalia"]</xpath>
+            <success>Always</success>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/XenotypeDef[defName="ATK_Anthrogoat"]/genes</xpath>
+            <value>
+              <li>RJWAT_mammal_breasts</li>
+            </value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/XenotypeDef[defName="ATK_Anthrowah"]/genes/li[starts-with(text(),"ROBTRG_Anthro_")]</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/XenotypeDef[defName="ATK_Anthrowah"]/genes/li[text()="rjw_genes_Needle_genitalia"]</xpath>
+            <success>Always</success>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/XenotypeDef[defName="ATK_Anthrowah"]/genes</xpath>
+            <value>
+              <li>RJWAT_mammal_breasts</li>
+            </value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/XenotypeDef[defName="ATK_Anthrodrake"]/genes/li[starts-with(text(),"ROBTRG_Anthro_")]</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/XenotypeDef[defName="ATK_Anthrodrake"]/genes/li[text()="rjw_genes_dragon_genitalia"]</xpath>
+            <success>Always</success>
+          </match>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/XenotypeDef[defName="ATK_Anthroshark"]/genes/li[starts-with(text(),"ROBTRG_Anthro_")]</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/XenotypeDef[defName="ATK_Anthroshark"]/genes/li[text()="rjw_genes_crocodilian_genitalia"]</xpath>
+            <success>Always</success>
+          </match>
+        </li>
+
       </operations>
     </match>
   </Operation>

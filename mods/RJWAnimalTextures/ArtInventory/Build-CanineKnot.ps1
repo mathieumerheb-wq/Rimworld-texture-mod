@@ -1,6 +1,8 @@
 # Fox size 4 erect is the slimmer knotted front. Wolf size 4 erect is the thicker veined front.
 # Both pictures already include the knot and the scrotum. Rests, balls, north, and the other sizes stay.
 # Wolf size 4 east is not written here: a front picture leaned up-right read as a front view on the side.
+# FoxPenis aroused 4 is rebuilt by Build-FoxFix.ps1 (2026-11-07) with the shaft kept red. Do not run this
+# for the fox: it writes into Textures and copies the references from an old Cursor folder.
 Add-Type -AssemblyName System.Drawing
 
 $ErrorActionPreference = "Stop"

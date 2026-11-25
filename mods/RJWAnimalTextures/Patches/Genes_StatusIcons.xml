@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Gives every genital gene an icon of the penis it draws, with a mark for how finished that sprite is.
+  Icons come from ArtInventory/Build-GeneIcons.ps1. Each operation succeeds when the gene's mod is absent.
+-->
+<Patch>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="rjw_genes_equine_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/rjw_genes_equine_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="rjw_genes_human_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/rjw_genes_human_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="rjw_genes_canine_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/rjw_genes_canine_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="rjw_genes_feline_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/rjw_genes_feline_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="rjw_genes_demonic_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/rjw_genes_demonic_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="rjw_genes_dragon_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/rjw_genes_dragon_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="rjw_genes_slime_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/rjw_genes_slime_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="rjw_genes_demonicT_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/rjw_genes_demonicT_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="rjw_genes_crocodilian_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/rjw_genes_crocodilian_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="rjw_genes_racoon_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/rjw_genes_racoon_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="rjw_genes_reptilian_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/rjw_genes_reptilian_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="rjw_genes_Needle_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/rjw_genes_Needle_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="rjw_genes_ovipositor_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/rjw_genes_ovipositor_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="rjw_genes_rodent_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/rjw_genes_rodent_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="rjw_genes_cloacal_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/rjw_genes_cloacal_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="rjw_genes_Pig_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/rjw_genes_Pig_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="rjw_genes_Orc_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/rjw_genes_Orc_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="ROBTRG_Anthro_Bear_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/ROBTRG_Anthro_Bear_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="ROBTRG_Anthro_Cat_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/ROBTRG_Anthro_Cat_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="ROBTRG_Anthro_Cow_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/ROBTRG_Anthro_Cow_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="ROBTRG_Anthro_Deer_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/ROBTRG_Anthro_Deer_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="ROBTRG_Anthro_Drake_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/ROBTRG_Anthro_Drake_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="ROBTRG_Anthro_Canine_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/ROBTRG_Anthro_Canine_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="ROBTRG_Anthro_Griff_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/ROBTRG_Anthro_Griff_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="ROBTRG_Anthro_Goat_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/ROBTRG_Anthro_Goat_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="ROBTRG_Anthro_Horse_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/ROBTRG_Anthro_Horse_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="ROBTRG_Anthro_Hyena_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/ROBTRG_Anthro_Hyena_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="ROBTRG_Anthro_Rabbit_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/ROBTRG_Anthro_Rabbit_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="ROBTRG_Anthro_Shark_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/ROBTRG_Anthro_Shark_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="ROBTRG_Anthro_Wah_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/ROBTRG_Anthro_Wah_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="ROBTRG_ReptileBody"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/ROBTRG_ReptileBody</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="ROBTRG_Elf_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/ROBTRG_Elf_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="ROBTRG_Golem_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/ROBTRG_Golem_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="ROBTRG_marine_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/ROBTRG_marine_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="ROBTRG_Loxodon_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/ROBTRG_Loxodon_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="ROBTRG_Orc_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/ROBTRG_Orc_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="ROBTRG_Undead_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/ROBTRG_Undead_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="ROBTRG_Rodent_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/ROBTRG_Rodent_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="ROBTRG_Slug_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/ROBTRG_Slug_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="ROBTRG_Tree_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/ROBTRG_Tree_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="ROBTRG_Anthro_Raccoon_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/ROBTRG_Anthro_Raccoon_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="ROBTRG_Anthro_Mustelid_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/ROBTRG_Anthro_Mustelid_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="ROBTRG_Hozen_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/ROBTRG_Hozen_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="ROBTRG_Dioktri_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/ROBTRG_Dioktri_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="rjw_genes_mammal_genitalia"]/iconPath</xpath>
+    <value>
+      <iconPath>Genes/Icons/Status/rjw_genes_mammal_genitalia</iconPath>
+    </value>
+    <success>Always</success>
+  </Operation>
+
+</Patch>

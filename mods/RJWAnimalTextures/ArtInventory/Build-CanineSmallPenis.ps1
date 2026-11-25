@@ -2,6 +2,7 @@
 # Size 0 rest south is the tighter slit. Size 1 rest south is the rounder scrotum.
 # Rest east is the side scrotum. Aroused south and east are the short erect pictures, base included.
 # Balls and north are blank. Sizes 2 through 5 are left to the fox and wolf scripts.
+# FoxPenis aroused 0 and 1 are replaced by Build-FoxFix.ps1 (2026-11-07). Rests and wolf stay from here.
 Add-Type -AssemblyName System.Drawing
 
 $ErrorActionPreference = "Stop"

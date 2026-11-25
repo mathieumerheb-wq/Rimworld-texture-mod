@@ -54,4 +54,117 @@
     </symbolPack>
   </GeneDef>
 
+  <!-- Thick spiked dragon tail with a spade tip. Same attachment and offsets as the vanilla furry
+       tail; same cost and manipulation bonus as the vanilla smooth tail. Tinted by the hair color. -->
+  <GeneDef ParentName="GeneTailBase">
+    <defName>RJWAT_dragon_tail</defName>
+    <label>dragon tail</label>
+    <description>Carriers of this gene grow a thick, spiked dragon tail with a spade tip, which can act as a dexterous fifth limb.</description>
+    <iconPath>Genes/Icons/RJWAT_dragon_tail</iconPath>
+    <iconColor>(1, 1, 1)</iconColor>
+    <displayOrderInCategory>1002</displayOrderInCategory>
+    <capMods>
+      <li>
+        <capacity>Manipulation</capacity>
+        <offset>0.05</offset>
+      </li>
+    </capMods>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <renderNodeProperties>
+      <li>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+        <texPath>Things/Pawn/Humanlike/BodyAttachments/DragonTail/DragonTail</texPath>
+        <colorType>Hair</colorType>
+        <useSkinShader>false</useSkinShader>
+        <overrideMeshSize>(1, 1)</overrideMeshSize>
+        <parentTagDef>Body</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+          <defaultData>
+            <layer>-2</layer>
+          </defaultData>
+          <dataNorth>
+            <offset>(0.1, 0, -0.25)</offset>
+            <layer>90</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(-0.1, 0, -0.25)</offset>
+          </dataSouth>
+          <dataEast>
+            <offset>(-0.5, 0, -0.15)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(0.5, 0, -0.15)</offset>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>drake</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>tail</symbol></li>
+        <li><symbol>scale</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <!-- Long flowing horsehair tail in the hair color. Same attachment, offsets, cost and cold
+       protection as the vanilla furry tail; it hangs lower than the other tails. -->
+  <GeneDef ParentName="GeneTailBase">
+    <defName>RJWAT_horse_tail</defName>
+    <label>horse tail</label>
+    <description>Carriers of this gene grow a long, flowing horsehair tail, which partially protects them from cold temperatures.</description>
+    <iconPath>Genes/Icons/RJWAT_horse_tail</iconPath>
+    <iconColor>(1, 1, 1)</iconColor>
+    <displayOrderInCategory>1003</displayOrderInCategory>
+    <statOffsets>
+      <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+    </statOffsets>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <renderNodeProperties>
+      <li>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+        <texPath>Things/Pawn/Humanlike/BodyAttachments/HorseTail/HorseTail</texPath>
+        <colorType>Hair</colorType>
+        <useSkinShader>false</useSkinShader>
+        <overrideMeshSize>(1, 1)</overrideMeshSize>
+        <parentTagDef>Body</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+          <defaultData>
+            <layer>-2</layer>
+          </defaultData>
+          <dataNorth>
+            <offset>(0.1, 0, -0.25)</offset>
+            <layer>90</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(-0.1, 0, -0.25)</offset>
+          </dataSouth>
+          <dataEast>
+            <offset>(-0.5, 0, -0.15)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(0.5, 0, -0.15)</offset>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>mare</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>tail</symbol></li>
+        <li><symbol>mane</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
 </Defs>

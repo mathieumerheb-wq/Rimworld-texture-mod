@@ -1,6 +1,9 @@
+# NOTE 2026-11-07: aroused sizes 0-2 are now built by Build-SmallErect.ps1 (and the fox/lynx scripts). Re-run those after this one.
 # Fit generated penis sprites to the Sized Apparel human height ladder.
 # The whole 512 texture is drawn at one cell, and the human erect base sits at y=262.
 # Deer sizes 3-5 stay on the horse sprites. Wolf is seated by Build-WolfSeat.ps1. Balls and blank north files stay.
+# FoxPenis aroused 0, 1, 2, 4 and LynxPenis aroused 0-2 are now written by Build-FoxFix.ps1 and
+# Build-LynxSmallErect.ps1 (2026-11-07). Running this again refits them; rerun those two scripts after it.
 Add-Type -AssemblyName System.Drawing
 $ErrorActionPreference = "Stop"
 

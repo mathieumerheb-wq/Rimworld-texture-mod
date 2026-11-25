@@ -3,6 +3,10 @@
 # and lengthened along it. The glans keeps more of its own shape than the shaft does.
 # ElfPenis is not in BodypartDetail_Penis.xml, so the filenames have no variation suffix.
 # Ball files are blank. The human penis art has no scrotum in it, and the human balls must not be drawn on top.
+# -Variant Uncut|Foreskin builds ElfPenis_<size>_<Variant>_<dir>.png from Sized Apparel's human
+# Penis_<size>_<Variant>_<dir>.png with the same warp, into -OutRoot (a staging folder). Aroused north,
+# which Sized Apparel has no variant file for, is copied from the plain elf aroused north.
+param([string]$Variant, [string]$OutRoot)
 Add-Type -AssemblyName System.Drawing
 
 $ErrorActionPreference = "Stop"
@@ -41,6 +45,27 @@ public static class ElfPenis
             }
         }
         BuildPreview(penisRoot, previewPath);
+    }
+
+    public static void BuildVariant(string sourceRoot, string liveRoot, string outRoot, string variant)
+    {
+        string hornyOut = Path.Combine(outRoot, "Horny");
+        Directory.CreateDirectory(outRoot);
+        Directory.CreateDirectory(hornyOut);
+        for (int size = 0; size <= 5; size++)
+        {
+            foreach (string dir in new string[] { "south", "east", "north" })
+            {
+                string rest = Path.Combine(sourceRoot, "Penis_" + size + "_" + variant + "_" + dir + ".png");
+                string restOut = Path.Combine(outRoot, "ElfPenis_" + size + "_" + variant + "_" + dir + ".png");
+                if (File.Exists(rest)) WarpFile(rest, restOut, dir, false);
+                else File.Copy(Path.Combine(liveRoot, "ElfPenis_" + size + "_" + dir + ".png"), restOut, true);
+                string horny = Path.Combine(sourceRoot, "Horny", "Penis_" + size + "_" + variant + "_" + dir + ".png");
+                string hornyFile = Path.Combine(hornyOut, "ElfPenis_" + size + "_" + variant + "_" + dir + ".png");
+                if (File.Exists(horny)) WarpFile(horny, hornyFile, dir, true);
+                else File.Copy(Path.Combine(liveRoot, "Horny", "ElfPenis_" + size + "_" + dir + ".png"), hornyFile, true);
+            }
+        }
     }
 
     static void WarpFile(string sourcePath, string destPath, string dir, bool horny)
@@ -369,4 +394,10 @@ public static class ElfPenis
 $source = "C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\sized-apparel-zero\Textures\SizedApparel\BodyParts\Human\Penis"
 $dest = "C:\Users\mathi\Documents\Rimworld new mods\mods\RJWAnimalTextures\Textures\SizedApparel\BodyParts\Human\Penis"
 $preview = "C:\Users\mathi\Documents\Rimworld new mods\mods\RJWAnimalTextures\ArtInventory\TextureV2\preview-ElfPenis.png"
-[ElfPenis]::Build($source, $dest, $preview)
+if ($Variant) {
+    if (-not $OutRoot) { throw "-Variant needs -OutRoot (a staging folder)." }
+    [ElfPenis]::BuildVariant($source, $dest, $OutRoot, $Variant)
+    "Built $Variant into $OutRoot"
+} else {
+    [ElfPenis]::Build($source, $dest, $preview)
+}
